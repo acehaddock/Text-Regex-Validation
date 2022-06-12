@@ -18,7 +18,22 @@
       -->
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+        <type-group name="singleLineGroup"> 
+      <type>SingleLine.Text</type> 
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>      
+    </type-group>
+
+        <property name="textValueToProcess" display-name-key="Input Text" 
+    description-key="Input Text To Process" of-type-group="singleLineGroup" 
+    usage="bound" required="true" />
+    <property name="regexExpressionToProcess" display-name-key="Regex Expression"
+    description-key="Regex Expression To Process" of-type="SingleLine.Text"
+    usage="input" required="true" />
+    <property name="notificationToUser" display-name-key="Field Notification"
+    description-key="Field Notification To User. Default Message will be Incorrect Format."
+    of-type="SingleLine.TextArea" usage="input" required="false" />
+
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
@@ -32,6 +47,7 @@
     -->
     <resources>
       <code path="index.ts" order="1"/>
+      <css path="css/TextRegexValidation.css" order="1" />
       <!-- UNCOMMENT TO ADD MORE RESOURCES
       <css path="css/TextRegexValidation.css" order="1" />
       <resx path="strings/TextRegexValidation.1033.resx" version="1.0.0" />
