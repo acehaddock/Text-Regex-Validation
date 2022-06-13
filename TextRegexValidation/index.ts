@@ -75,7 +75,7 @@ export class TextRegexValidation implements ComponentFramework.StandardControl<I
 
 		if(this.isValid(context.parameters.textValueToProcess))
 		{
-			this.sInputValueToProcess = context.parameters.textValueToProcess.raw;
+			this.sInputValueToProcess = context.parameters.textValueToProcess.raw!;
 			sInputValue = context.parameters.textValueToProcess.formatted ?
 				context.parameters.textValueToProcess.formatted : "";
 		}
@@ -88,7 +88,7 @@ export class TextRegexValidation implements ComponentFramework.StandardControl<I
 		
 		if(this.isValid(context.parameters.notificationToUser))
 		{
-			this.sNotificationToUser = context.parameters.notificationToUser.raw;
+			this.sNotificationToUser = context.parameters.notificationToUser.raw!
 		}
 
 		// Set the control value on initialization
