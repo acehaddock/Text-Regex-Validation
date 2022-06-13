@@ -83,7 +83,7 @@ export class TextRegexValidation implements ComponentFramework.StandardControl<I
 		if(this.isValid(context.parameters.regexExpressionToProcess))
 		{
 			this.objRegexToProcess = 
-				new RegExp(context.parameters.regexExpressionToProcess.raw);
+				new RegExp(context.parameters.regexExpressionToProcess.raw!);
 		}
 		
 		if(this.isValid(context.parameters.notificationToUser))
