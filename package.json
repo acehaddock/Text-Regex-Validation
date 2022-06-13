@@ -10,8 +10,6 @@
     "refreshTypes": "pcf-scripts refreshTypes"
   },
   "dependencies": {
-    "@types/node": "^10.12.18",
-    "@types/powerapps-component-framework": "1.1.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.29.0",
