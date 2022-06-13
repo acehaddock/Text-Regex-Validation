@@ -1,18 +1,18 @@
-# Apply Regex Validation PCF (PowerApps Component Framework)
+# Text Regex Validation PCF (PowerApps Component Framework)
 Apply Regex Validation custom control is a Regex based field validator for text fields which uses Dynamics CRM client APIs to set and clear field level notifications.
 
 # Instructions to use:
 1. Install the managed solution (available with the most latest [release](UPdate URL to release folder) in your Dynamics CRM instance.
 2. Open the Form Editor for the desired form of the required entity, select the field supported by this control *(SingleLine.Text, SingleLine.Phone, SingleLine.Email)* and click *"Change Properties"* and then select the *"Controls"* tab.
-3. In the Controls tab, click the *"Add Control..."* button, select *"Apply Regex Validation"* in the list of available controls and click *"Add"*.\
-![Add Custom Control](add url for Control )
+3. In the Controls tab, click the *"Add Control..."* button, select *"Apply Regex Validation"* in the list of available controls and click *"Add"*.
+![Adding_Custom_Control_to_form](https://github.com/acehaddock/Text-Regex-Validation/blob/master/ReadMeImages/Adding_Custom_Control_to_form.PNG?raw=true, "Add Custom Control")
 4. Select the types of client for which this control will be used.
 5. Property *"Input Text"* will be selected by default.
 6. Insert the Regex which you want to apply to the field for validation in the mandatory *"Regex Expression"* property.
-![Final Control Layout]("Final Control Layout")
+![Completed_Control_Layout](https://github.com/acehaddock/Text-Regex-Validation/blob/master/ReadMeImages/Completed_Control_Layout.png?raw=true, "Completed Control Layout")
 7. Insert the message which you want to show the user in the *"Field Notification"* property.
 8. If *"Field Notification"* property is left empty, default message will be *"Incorrect Format"*.
-![Field Notification]("Field Notification")
+![Field_Notification](https://github.com/acehaddock/Text-Regex-Validation/blob/master/ReadMeImages/Field_Notification.PNG?raw=ture, "Field Notification")
 9. Save settings of the custom control, save and publish the entity form.
 
 
