@@ -18,11 +18,6 @@
       -->
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-        <type-group name="singleLineGroup"> 
-      <type>SingleLine.Text</type> 
-      <type>SingleLine.Phone</type>
-      <type>SingleLine.Email</type>      
-    </type-group>
 
         <property name="textValueToProcess" display-name-key="Input Text" 
     description-key="Input Text To Process" of-type-group="singleLineGroup" 
@@ -34,6 +29,11 @@
     description-key="Field Notification To User. Default Message will be Incorrect Format."
     of-type="SingleLine.TextArea" usage="input" required="false" />
 
+    <type-group name="singleLineGroup"> 
+      <type>SingleLine.Text</type> 
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>      
+    </type-group> 
     <!--
       Property node's of-type attribute can be of-type-group attribute.
       Example:
