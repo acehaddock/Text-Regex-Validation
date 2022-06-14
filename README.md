@@ -2,7 +2,7 @@
 Apply Regex Validation custom control is a Regex based field validator for text fields which uses Dynamics CRM client APIs to set and clear field level notifications.
 
 # Instructions to use:
-1. Install the managed solution (available with the most latest [release](UPdate URL to release folder) in your Dynamics CRM instance.
+1. Install the managed solution (available with the most latest [release](https://github.com/acehaddock/Text-Regex-Validation/releases) in your Dynamics CRM instance.
 2. Open the Form Editor for the desired form of the required entity, select the field supported by this control *(SingleLine.Text, SingleLine.Phone, SingleLine.Email)* and click *"Change Properties"* and then select the *"Controls"* tab.
 3. In the Controls tab, click the *"Add Control..."* button, select *"Apply Regex Validation"* in the list of available controls and click *"Add"*.
 ![Adding_Custom_Control_to_form](https://github.com/acehaddock/Text-Regex-Validation/blob/master/ReadMeImages/Adding_Custom_Control_to_form.PNG?raw=true, "Add Custom Control")
